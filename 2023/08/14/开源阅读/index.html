@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>开源阅读 | ZMerIII</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"搜索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 - $1 行","copy":"code.copy","copyFinish":"code.copyFinish","expand":"code.expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><link rel="stylesheet" href="/css/arknights.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+  --dark-background: url('https://www.helloimg.com/images/2023/08/06/oL7QJm.jpg');
+  --light-background: url('/img/bk.jpg');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">主页</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">归档</span></a></li><li class="navItem"><a class="navBlock" href="/%E6%94%B6%E8%97%8F%E5%A4%B9"><span class="navItemTitle">收藏夹</span></a></li><li class="navItem"><a class="navBlock" href="/%E5%85%B3%E4%BA%8E"><span class="navItemTitle">关于</span></a></li></ol></nav></header><div id="shadow-header"></div><article><div id="post-bg"><div id="post-title"><h1>开源阅读</h1><div id="post-info"><span>发布时间: <div class="control"><time datetime="2023-08-14T07:18:09.000Z" id="date"> 2023-08-14</time></div></span><br><span>更新时间: <div class="control"><time datetime="2023-08-14T07:31:21.761Z" id="updated"> 2023-08-14</time></div></span></div></div><hr><div id="post-content"><p>#阅读是一款可以自定义网络来源内容的阅读工具。</p>
+<span id="more"></span>
+<div align="center" class='item-img' data-src='https://www.helloimg.com/images/2023/08/14/oSRjeM.png'><img width="125" height="125" src="https://www.helloimg.com/images/2023/08/14/oSRjeM.png" alt="legado"/>  
+
+<p>Legado &#x2F; 开源阅读</p>
+<br>
+<a href="https://gedoor.github.io" target="_blank">gedoor.github.io</a> / <a href="https://www.legado.top/" target="_blank">legado.top</a>
+<br>
+Legado is a free and open source novel reader for Android.
+</div>
+
+<p><a href="#contents" class='item-img' data-src='https://img.shields.io/badge/-Contents:-696969.svg'><img src="https://img.shields.io/badge/-Contents:-696969.svg"></a> <a href="#Function-%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD-" class='item-img' data-src='https://img.shields.io/badge/-Function-F5F5F5.svg'><img src="https://img.shields.io/badge/-Function-F5F5F5.svg"></a> <a href="#Download-%E4%B8%8B%E8%BD%BD-" class='item-img' data-src='https://img.shields.io/badge/-Download-F5F5F5.svg'><img src="https://img.shields.io/badge/-Download-F5F5F5.svg"></a> <a href="#Community-%E4%BA%A4%E6%B5%81%E7%A4%BE%E5%8C%BA-" class='item-img' data-src='https://img.shields.io/badge/-Community-F5F5F5.svg'><img src="https://img.shields.io/badge/-Community-F5F5F5.svg"></a> <a href="#API-" class='item-img' data-src='https://img.shields.io/badge/-API-F5F5F5.svg'><img src="https://img.shields.io/badge/-API-F5F5F5.svg"></a> <a href="#Other-%E5%85%B6%E4%BB%96-" class='item-img' data-src='https://img.shields.io/badge/-Other-F5F5F5.svg'><img src="https://img.shields.io/badge/-Other-F5F5F5.svg"></a> <a href="#Grateful-%E6%84%9F%E8%B0%A2-" class='item-img' data-src='https://img.shields.io/badge/-Grateful-F5F5F5.svg'><img src="https://img.shields.io/badge/-Grateful-F5F5F5.svg"></a> <a href="#Interface-%E7%95%8C%E9%9D%A2-" class='item-img' data-src='https://img.shields.io/badge/-Interface-F5F5F5.svg'><img src="https://img.shields.io/badge/-Interface-F5F5F5.svg"></a></p>
+<blockquote>
+<p>新用户？</p>
+<p>软件不提供内容，需要您自己手动添加，例如导入书源等。<br>看看 <a target="_blank" rel="noopener" href="https://www.yuque.com/legado/wiki">官方帮助文档</a>，也许里面就有你要的答案。</p>
+</blockquote>
+<h1 id="Function-主要功能"><a href="#Function-主要功能" class="headerlink" title="Function-主要功能 "></a>Function-主要功能 <a href="#Function-%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD-" class='item-img' data-src='https://img.shields.io/badge/-Function-F5F5F5.svg'><img src="https://img.shields.io/badge/-Function-F5F5F5.svg"></a></h1><p>1.自定义书源，自己设置规则，抓取网页数据，规则简单易懂，软件内有规则说明。<br><br>2.列表书架，网格书架自由切换。<br><br>3.书源规则支持搜索及发现，所有找书看书功能全部自定义，找书更方便。<br><br>4.订阅内容,可以订阅想看的任何内容,看你想看<br><br>5.支持替换净化，去除广告替换内容很方便。<br><br>6.支持本地TXT、EPUB阅读，手动浏览，智能扫描。<br><br>7.支持高度自定义阅读界面，切换字体、颜色、背景、行距、段距、加粗、简繁转换等。<br><br>8.支持多种翻页模式，覆盖、仿真、滑动、滚动等。<br><br>9.软件开源，持续优化，无广告。</p>
+</details>
+
+<a href="#readme" class='item-img' data-src='https://img.shields.io/badge/-返回顶部-orange.svg'><img src="https://img.shields.io/badge/-返回顶部-orange.svg" alt="#" align="right">
+</a>
+
+<h1 id="Download-下载"><a href="#Download-下载" class="headerlink" title="Download-下载 "></a>Download-下载 <a href="#Download-%E4%B8%8B%E8%BD%BD-" class='item-img' data-src='https://img.shields.io/badge/-Download-F5F5F5.svg'><img src="https://img.shields.io/badge/-Download-F5F5F5.svg"></a></h1><h4 id="Android-安卓"><a href="#Android-安卓" class="headerlink" title="Android-安卓"></a>Android-安卓</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/gedoor/legado/releases/latest">Releases</a></li>
+<li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=io.legado.play.release">Google play - $1.99</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/io.legado.app.release">Coolapk</a></li>
+<li><a target="_blank" rel="noopener" href="https://kunfei.lanzoui.com/b0f810h4b">#Beta</a></li>
+<li><a target="_blank" rel="noopener" href="https://apt.izzysoft.de/fdroid/index/apk/io.legado.app.release">IzzyOnDroid F-Droid Repository</a></li>
+</ul>
+<h4 id="IOS-苹果"><a href="#IOS-苹果" class="headerlink" title="IOS-苹果"></a>IOS-苹果</h4><ul>
+<li>已停止(No release) - <a target="_blank" rel="noopener" href="https://github.com/gedoor/YueDuFlutter">Github</a></li>
+</ul>
+<a href="#readme" class='item-img' data-src='https://img.shields.io/badge/-返回顶部-orange.svg'><img src="https://img.shields.io/badge/-返回顶部-orange.svg" alt="#" align="right">
+</a>
+
+<h1 id="Community-交流社区"><a href="#Community-交流社区" class="headerlink" title="Community-交流社区 "></a>Community-交流社区 <a href="#Community-%E4%BA%A4%E6%B5%81%E7%A4%BE%E5%8C%BA-" class='item-img' data-src='https://img.shields.io/badge/-Community-F5F5F5.svg'><img src="https://img.shields.io/badge/-Community-F5F5F5.svg"></a></h1><h4 id="Telegram"><a href="#Telegram" class="headerlink" title="Telegram"></a>Telegram</h4><p><a target="_blank" rel="noopener" href="https://t.me/yueduguanfang" class='item-img' data-src='https://img.shields.io/badge/Telegram-%E7%BE%A4%E7%BB%84-blue'><img src="https://img.shields.io/badge/Telegram-%E7%BE%A4%E7%BB%84-blue" alt="Telegram-group"></a> <a target="_blank" rel="noopener" href="https://t.me/legado_channels" class='item-img' data-src='https://img.shields.io/badge/Telegram-%E9%A2%91%E9%81%93-blue'><img src="https://img.shields.io/badge/Telegram-%E9%A2%91%E9%81%93-blue" alt="Telegram-channel"></a></p>
+<h4 id="Discord"><a href="#Discord" class="headerlink" title="Discord"></a>Discord</h4><p><a target="_blank" rel="noopener" href="https://discord.gg/VtUfRyzRXn" class='item-img' data-src='https://img.shields.io/discord/560731361414086666?color=%235865f2&label=Discord'><img src="https://img.shields.io/discord/560731361414086666?color=%235865f2&label=Discord" alt="Discord"></a></p>
+<h4 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h4><p><a target="_blank" rel="noopener" href="https://www.yuque.com/legado/wiki/community">https://www.yuque.com/legado/wiki/community</a></p>
+<a href="#readme" class='item-img' data-src='https://img.shields.io/badge/-返回顶部-orange.svg'><img src="https://img.shields.io/badge/-返回顶部-orange.svg" alt="#" align="right">
+</a>
+
+<h1 id="API"><a href="#API" class="headerlink" title="API "></a>API <a href="#API-" class='item-img' data-src='https://img.shields.io/badge/-API-F5F5F5.svg'><img src="https://img.shields.io/badge/-API-F5F5F5.svg"></a></h1><ul>
+<li>阅读3.0 提供了2种方式的API：<code>Web方式</code>和<code>Content Provider方式</code>。您可以在<a href="api.md">这里</a>根据需要自行调用。 </li>
+<li>可通过url唤起阅读进行一键导入,url格式: legado:&#x2F;&#x2F;import&#x2F;{path}?src&#x3D;{url}</li>
+<li>path类型: bookSource,rssSource,replaceRule,textTocRule,httpTTS,theme,readConfig,dictRule,addToBookshelf</li>
+<li>path类型解释: 书源,订阅源,替换规则,本地txt小说目录规则,在线朗读引擎,主题,阅读排版,添加到书架</li>
+</ul>
+<a href="#readme" class='item-img' data-src='https://img.shields.io/badge/-返回顶部-orange.svg'><img src="https://img.shields.io/badge/-返回顶部-orange.svg" alt="#" align="right">
+</a>
+
+<h1 id="Other-其他"><a href="#Other-其他" class="headerlink" title="Other-其他 "></a>Other-其他 <a href="#Other-%E5%85%B6%E4%BB%96-" class='item-img' data-src='https://img.shields.io/badge/-Other-F5F5F5.svg'><img src="https://img.shields.io/badge/-Other-F5F5F5.svg"></a></h1><h5 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h5><p><a target="_blank" rel="noopener" href="https://gedoor.github.io/Disclaimer">https://gedoor.github.io/Disclaimer</a></p>
+<h5 id="阅读3-0"><a href="#阅读3-0" class="headerlink" title="阅读3.0"></a>阅读3.0</h5><ul>
+<li><a target="_blank" rel="noopener" href="https://alanskycn.gitee.io/teachme">书源规则</a></li>
+<li><a href="/app/src/main/assets/updateLog.md">更新日志</a></li>
+<li><a href="/app/src/main/assets/help/appHelp.md">帮助文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/gedoor/legado_web_bookshelf">web端书架</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/gedoor/legado_web_source_editor">web端源编辑</a></li>
+</ul>
+<a href="#readme" class='item-img' data-src='https://img.shields.io/badge/-返回顶部-orange.svg'><img src="https://img.shields.io/badge/-返回顶部-orange.svg" alt="#" align="right">
+</a>
+
+<h1 id="Grateful-感谢"><a href="#Grateful-感谢" class="headerlink" title="Grateful-感谢 "></a>Grateful-感谢 <a href="#Grateful-%E6%84%9F%E8%B0%A2-" class='item-img' data-src='https://img.shields.io/badge/-Grateful-F5F5F5.svg'><img src="https://img.shields.io/badge/-Grateful-F5F5F5.svg"></a></h1><blockquote>
+<ul>
+<li>org.jsoup:jsoup</li>
+<li>cn.wanghaomiao:JsoupXpath</li>
+<li>com.jayway.jsonpath:json-path</li>
+<li>com.github.gedoor:rhino-android</li>
+<li>com.squareup.okhttp3:okhttp</li>
+<li>com.github.bumptech.glide:glide</li>
+<li>org.nanohttpd:nanohttpd</li>
+<li>org.nanohttpd:nanohttpd-websocket</li>
+<li>cn.bingoogolapple:bga-qrcode-zxing</li>
+<li>com.jaredrummler:colorpicker</li>
+<li>org.apache.commons:commons-text</li>
+<li>io.noties.markwon:core</li>
+<li>io.noties.markwon:image-glide</li>
+<li>com.hankcs:hanlp</li>
+<li>com.positiondev.epublib:epublib-core<a href="#readme" class='item-img' data-src='https://img.shields.io/badge/-返回顶部-orange.svg'><img src="https://img.shields.io/badge/-返回顶部-orange.svg" alt="#" align="right">
+</a></li>
+</ul>
+</blockquote>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2023/08/14/LiteLoaderQQNT/">← 下一篇 QQNT</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2023/08/06/%E7%AC%94%E8%AE%B0%E6%9C%AC/">SydneyQt~~~~~新必应AI 上一篇 →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧</a><a class="i-index" id="to-index" href="#toc-div" title="文章目录">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="切换主题"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://www.helloimg.com/images/2023/08/06/oL766T.png" alt="Logo"></a><h1 id="Dr"><a target="_blank" rel="noopener" href="https://wominiii.github.io//">ZMerIII</a></h1><div id="description"><p></p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/willin/hexo-wordcount"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" href="mailto:stran_ge@outlook.com"><i class="fa fa-envelope" alt="E-Mail"></i></a><a class="social" target="_blank" rel="noopener" href="https://space.bilibili.com/67878942?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili" alt="BiliBili"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Function-%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD"><span class="toc-number">1.</span> <span class="toc-text">Function-主要功能 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Download-%E4%B8%8B%E8%BD%BD"><span class="toc-number">2.</span> <span class="toc-text">Download-下载 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Android-%E5%AE%89%E5%8D%93"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">Android-安卓</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IOS-%E8%8B%B9%E6%9E%9C"><span class="toc-number">2.0.0.2.</span> <span class="toc-text">IOS-苹果</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Community-%E4%BA%A4%E6%B5%81%E7%A4%BE%E5%8C%BA"><span class="toc-number">3.</span> <span class="toc-text">Community-交流社区 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Telegram"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">Telegram</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Discord"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">Discord</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Other"><span class="toc-number">3.0.0.3.</span> <span class="toc-text">Other</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#API"><span class="toc-number">4.</span> <span class="toc-text">API </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Other-%E5%85%B6%E4%BB%96"><span class="toc-number">5.</span> <span class="toc-text">Other-其他 </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E"><span class="toc-number">5.0.0.0.1.</span> <span class="toc-text">免责声明</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%98%85%E8%AF%BB3-0"><span class="toc-number">5.0.0.0.2.</span> <span class="toc-text">阅读3.0</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Grateful-%E6%84%9F%E8%B0%A2"><span class="toc-number">6.</span> <span class="toc-text">Grateful-感谢 </span></a></li></ol></div></div><footer><iframe “网易云” frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1471761548&auto=0&height=66"></iframe><nobr><span class="icp-title">QQ</span><a class="icp-content" target="_blank" rel="noopener" href="https://qm.qq.com/q/5PfAvrpdh6">1807534359</a></nobr><br><nobr>使用 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Skin <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>网站创建自 <a target="_blank" rel="noopener" href="https://github.com/wominIII">WoMin</a></nobr></footer></aside><div id="shadow-aside"></div></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script></body></html>

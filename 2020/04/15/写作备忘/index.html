@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>写作格式 | ZMerIII</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"搜索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 - $1 行","copy":"code.copy","copyFinish":"code.copyFinish","expand":"code.expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><link rel="stylesheet" href="/css/arknights.css"><script>if (window.localStorage.getItem('theme-mode') === 'light') document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark') document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+  --dark-background: url('https://www.helloimg.com/images/2023/08/06/oL7QJm.jpg');
+  --light-background: url('/img/bk.jpg');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><nav><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">主页</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">归档</span></a></li><li class="navItem"><a class="navBlock" href="/%E6%94%B6%E8%97%8F%E5%A4%B9"><span class="navItemTitle">收藏夹</span></a></li><li class="navItem"><a class="navBlock" href="/%E5%85%B3%E4%BA%8E"><span class="navItemTitle">关于</span></a></li></ol></nav></header><div id="shadow-header"></div><article><div id="post-bg"><div id="post-title"><h1>写作格式</h1><div id="post-info"><span>发布时间: <div class="control"><time datetime="2020-04-15T13:54:02.000Z" id="date"> 2020-04-15</time></div></span><br><span>更新时间: <div class="control"><time datetime="2023-08-14T07:36:45.790Z" id="updated"> 2023-08-14</time></div></span></div></div><hr><div id="post-content"><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><ul>
+<li>参考 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing">Hexo | 写作</a>。</li>
+<li>在主题仓库的 Hexo 分支有一些 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights/tree/hexo/source/_posts">示例文本</a>可以取用</li>
+<li>添加文章标签与分类，更多特性可参考 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Hexo | Front-matter</a> ，示例：<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#x27;Hello World !&#x27;</span><br><span class="line">date: 2020-04-15 21:54:02</span><br><span class="line">tags: code</span><br><span class="line"><span class="section">category: Example</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure></li>
+<li>在 <code>&lt;!-- more --&gt;</code> 之前的内容称之为摘要，会显示在首页上，并且可以设置是否也在正文显示。<span id="more"></span>
+主题添加了一些 <a href="TagPlugin.md">标签插件</a> 可在写作中使用。</li>
+</ul>
+<h2 id="在导航栏中添加页面"><a href="#在导航栏中添加页面" class="headerlink" title="在导航栏中添加页面"></a>在导航栏中添加页面</h2><ul>
+<li>例如：新建一个 <code>about</code> 页面<br>在 <code>Hexo</code> 目录下执行<figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &#x27;about&#x27;</span><br></pre></td></tr></table></figure>
+然后 <code>Hexo/source/</code> 目录下会多一个 <code>about</code> 文件夹</li>
+<li>编辑 <code>Hexo/source/about/index.md</code> 文件</li>
+<li>编辑 <code>_config.arknights.yml</code>，添加一个链接：<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">About:</span> <span class="string">/about</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="禁止归档页翻页"><a href="#禁止归档页翻页" class="headerlink" title="禁止归档页翻页"></a>禁止归档页翻页</h2><p>该设置位于 Hexo 配置文件 <code>_config.yml</code> 约第 92 行。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></span><br><span class="line"><span class="attr">per_page:</span> <span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+<p>改为 0 即可。</p>
+<h2 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h2><h3 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h3><p>本主题支持<a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a> 。<br>请参考 <a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html">Valine 快速开始</a> 修改 Hexo 目录下的 <code>_config.arknights.yml</code> 文件：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="comment"># APP ID</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="comment"># APP KEY</span></span><br><span class="line">  <span class="attr">server_url:</span> <span class="comment"># APP DOMAIN（LeanCloud 国际版）</span></span><br></pre></td></tr></table></figure>
+
+<p>开启邮件提醒：<a target="_blank" rel="noopener" href="https://github.com/zhaojun1998/Valine-Admin">zhaojun1998 &#x2F; Valine-Admin</a></p>
+<blockquote>
+<p><strong>注意！</strong> 当 Valine 使用 <em>LeanCloud 国际版</em> 时，才需要配置 <code>server_url:</code>。<br>该设置可在 LeanCloud 应用中的 <code>设置 -&gt; 应用凭证 -&gt; 域名白名单 -&gt; Request 域名</code> 中找到以 <code>.api.lncldglobal.com</code> 结尾的域名，加上 <code>https://</code> 前缀即可。</p>
+</blockquote>
+<h3 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h3><p>本主题支持 <a target="_blank" rel="noopener" href="https://gitalk.github.io/">Gitalk</a> 。<br>请参考 <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">gitalk&#x2F;readme-cn.md</a> 修改 Hexo 目录下的 <code>_config.arknights.yml</code> 文件：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">gitalk:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">client_id:</span> <span class="comment"># GitHub 应用 Client ID</span></span><br><span class="line">  <span class="attr">client_secret:</span> <span class="comment"># GitHub 应用 Client Secret</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="comment"># 用于存放评论数据的 GitHub 仓库</span></span><br><span class="line">  <span class="attr">owner:</span> <span class="comment"># 该 GitHub 仓库所有者</span></span><br><span class="line">  <span class="attr">admin:</span> [] <span class="comment"># 具有写该 GitHub 仓库权限的用户</span></span><br><span class="line">  <span class="comment"># 例如: [adminA,adminB]</span></span><br><span class="line">  <span class="attr">id:</span> <span class="comment"># (可选) 页面的唯一标识</span></span><br><span class="line">  <span class="comment"># 例如: location.pathname</span></span><br></pre></td></tr></table></figure>
+<h3 id="Waline"><a href="#Waline" class="headerlink" title="Waline"></a>Waline</h3><p>本主题支持 <a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a> 。<br>请参考 <a target="_blank" rel="noopener" href="https://waline.js.org/">Waline官方文档</a> 修改 Hexo 目录下的 <code>_config.arknights.yml</code> 文件:  </p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">waline:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> </span><br><span class="line">  <span class="attr">server_url:</span> <span class="comment">#Server_Url</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>本主题支持两种方案显示数学公式：</p>
+<h3 id="方案一：静态渲染"><a href="#方案一：静态渲染" class="headerlink" title="方案一：静态渲染"></a>方案一：静态渲染</h3><p>可以使用 <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-filter-mathjax">hexo-filter-mathjax</a> Hexo 过滤器静态渲染，来显示数学公式：</p>
+<ol>
+<li>在 Hexo 目录下执行以下指令：</li>
+</ol>
+<figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装 hexo-filter-mathjax 插件</span></span><br><span class="line">cnpm install hexo-filter-mathjax --save</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>把以下内容添加到 <code>Hexo/_config.yml</code> 文件：</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">none</span> <span class="comment"># 或 &#x27;ams&#x27; 或 &#x27;all&#x27;</span></span><br><span class="line">  <span class="attr">single_dollars:</span> <span class="literal">true</span> <span class="comment"># 启用单个美元符号作为内联（行内）数学公式定界符</span></span><br><span class="line">  <span class="attr">cjk_width:</span> <span class="number">0.9</span> <span class="comment"># 相对 CJK 字符宽度</span></span><br><span class="line">  <span class="attr">normal_width:</span> <span class="number">0.6</span> <span class="comment"># 相对正常（等宽）宽度</span></span><br><span class="line">  <span class="attr">append_css:</span> <span class="literal">true</span> <span class="comment"># 将 CSS 添加到每个页面</span></span><br><span class="line">  <span class="attr">every_page:</span> <span class="literal">false</span> <span class="comment"># 如果为 true，那么无论每篇文章的前题中的 `mathjax` 设置如何，每页都将由 mathjax 呈现</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在需要启用 mathjax 的文章的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Front-matter</a> 区内添加 <code>mathjax: true</code>：</li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: On the Electrodynamics of Moving Bodies</span><br><span class="line">categories: Physics</span><br><span class="line">date: 1905-06-30 12:00:00</span><br><span class="line"><span class="section">mathjax: true</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>然后，就可以在文章中使用 LaTeX 语法。</p>
+<ol start="4">
+<li>需要注意，内联数学公式（…… <code>$&lt;数学公式&gt;$</code> ……）在开头 <code>$</code> 之后和结尾 <code>$</code> 之前不能有空格！例如：</li>
+</ol>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">-$ \epsilon_0 $</span></span><br><span class="line"><span class="addition">+$\epsilon_0$</span></span><br><span class="line"><span class="deletion">-$ \frac&#123;\partial&#125;&#123;\partial t&#125; $</span></span><br><span class="line"><span class="addition">+$\frac&#123;\partial&#125;&#123;\partial t&#125;$</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>需要注意 LaTeX 与 Markdown 语法之间的冲突。如有必要，请使用 <code>\</code> 进行转义：</li>
+</ol>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">-$\epsilon_0$</span></span><br><span class="line"><span class="addition">+$\epsilon\_0$</span></span><br><span class="line"><span class="deletion">-\begin&#123;eqnarray*&#125;</span></span><br><span class="line"><span class="addition">+\begin&#123;eqnarray\*&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>或是更换能更好处理数学公式的渲染器 <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-renderer-pandoc">hexo-renderer-pandoc</a>。</p>
+<h3 id="方案二：动态渲染"><a href="#方案二：动态渲染" class="headerlink" title="方案二：动态渲染"></a>方案二：动态渲染</h3><p>本主题也支持 <a target="_blank" rel="noopener" href="https://www.mathjax.org/">MathJax</a> ，在用户浏览时动态渲染公式：</p>
+<ol>
+<li>首先要卸载 Hexo 默认自带的 hexo-renderer-marked 渲染器，更换成对 MathJax 支持更好的 <a target="_blank" rel="noopener" href="https://github.com/sun11/hexo-renderer-kramed">hexo-renderer-kramed</a> 渲染器：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改 <strong>Hexo 目录</strong> 下的 <code>_config.arknights.yml</code> 文件：</li>
+</ol>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 公式支持</span><br><span class="line">mathjax:</span><br><span class="line"><span class="deletion">-  enable: false</span></span><br><span class="line"><span class="addition">+  enable: true</span></span><br><span class="line">  version: &#x27;2.6.1&#x27;  # 重要</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>然后，就可以在文章中使用 LaTeX 语法：</li>
+</ol>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 单行内联公式</span></span><br><span class="line"><span class="comment">% 注意需要两边带上 &quot;`&quot; ，且 &quot;`&quot; 与 &quot;$&quot; 之间不能有空格</span></span><br><span class="line">`<span class="built_in">$</span><span class="keyword">\sigma</span><span class="built_in">$</span>`</span><br><span class="line"></span><br><span class="line"><span class="comment">% 多行公式</span></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;aligned&#125;f(x) <span class="built_in">&amp;</span>= <span class="keyword">\sum</span><span class="built_in">_</span>&#123;i=1&#125;<span class="built_in">^</span>&#123;<span class="keyword">\infty</span>&#125;&#123;<span class="keyword">\frac</span>&#123;x&#125;&#123;2<span class="built_in">^</span>i&#125;&#125; <span class="keyword">\\</span></span><br><span class="line"><span class="built_in">&amp;</span>= x<span class="keyword">\end</span>&#123;aligned&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>用这种方案，不会造成 LaTeX 与 Markdown 语法之间的冲突。在文中使用 LaTeX 语法不需要转义。<br>以下公式可以直接使用，不会造成任何问题：</li>
+</ol>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\epsilon</span><span class="built_in">_</span>0</span><br><span class="line"><span class="keyword">\begin</span>&#123;eqnarray*&#125;</span><br></pre></td></tr></table></figure>
+
+<p>hexo-renderer-kramed 插件还有其他可配置项，请参考插件文档： <a target="_blank" rel="noopener" href="https://github.com/sun11/hexo-renderer-kramed">https://github.com/sun11/hexo-renderer-kramed</a></p>
+<p>几种公式显示方案各有优缺点：</p>
+<ol>
+<li>动态渲染方案 LaTeX 语法不需要转义，能更好的支持从其他地方导出的 Markdown 文件。但因为需要在浏览器渲染，页面显示会略有延迟。</li>
+<li>静态渲染方案将公式直接编译在静态文件里，显示性能更优，但语法需要转义。</li>
+</ol>
+<h2 id="图表支持"><a href="#图表支持" class="headerlink" title="图表支持"></a>图表支持</h2><p>修改 <strong>Hexo 目录</strong> 下的 <code>_config.arknights.yml</code> 文件：</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> # 图表支持</span><br><span class="line"> mermaid:</span><br><span class="line"><span class="deletion">-  enable: false</span></span><br><span class="line"><span class="addition">+  enable: true</span></span><br><span class="line">   version: &#x27;8.13.5&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>主题通过 mermaid-js 绘制各种图表。**<a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/">查看示例</a>**</p>
+<p>支持：<br><a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E6%B5%81%E7%A8%8B%E5%9B%BE">流程图</a><br>| <a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E5%BA%8F%E5%88%97%E5%9B%BE">序列图</a><br>| <a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E7%B1%BB%E5%9B%BE">类图</a><br>| <a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E7%8A%B6%E6%80%81%E5%9B%BE">状态图</a><br>| <a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB%E5%9B%BE">实体关系图</a><br>| <a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E7%94%A8%E6%88%B7%E6%97%85%E7%A8%8B%E5%9B%BE">用户旅程图</a><br>| <a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E7%94%98%E7%89%B9%E5%9B%BE">甘特图</a><br>| <a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E6%8C%87%E4%BB%A4%E5%9B%BE">指令图</a><br>| <a target="_blank" rel="noopener" href="https://ark.theme.yueplus.ink/mermaid/#%E9%A5%BC%E5%9B%BE">饼图</a></p>
+<p>语法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;mermaid&quot;</span>&gt;</span></span><br><span class="line">  graph LR</span><br><span class="line">  A[Hard edge] --&gt;|Link text| B(Round edge)</span><br><span class="line">  B --&gt; C&#123;Decision&#125;</span><br><span class="line">  C --&gt;|One| D[Result one]</span><br><span class="line">  C --&gt;|Two| E[Result two]</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果习惯使用 <code>代码块</code> 也完全支持。</p>
+</blockquote>
+<h2 id="字数-阅读时长统计"><a href="#字数-阅读时长统计" class="headerlink" title="字数&#x2F;阅读时长统计"></a>字数&#x2F;阅读时长统计</h2><p>依赖 <a target="_blank" rel="noopener" href="https://github.com/willin/hexo-wordcount"><code>hexo-wordcount</code></a>：</p>
+<p>npm 用户：</p>
+<figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
+
+<p>yarn 用户：</p>
+<figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add hexo-wordcount</span><br></pre></td></tr></table></figure>
+
+<p>之后修改 <strong>Hexo 目录</strong> 下的 <code>_config.arknights.yml</code> 文件：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span> <span class="comment"># 是否显示字数统计</span></span><br><span class="line">  <span class="attr">time:</span> <span class="literal">true</span> <span class="comment"># 是否显示阅读时长统计</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="文档加密"><a href="#文档加密" class="headerlink" title="文档加密"></a>文档加密</h2><p><strong>注意： 前端加密并不可靠！</strong></p>
+<p><strong>注意！</strong> 此加密插件会加密摘要内容，所以使用此插件时不能在正文中隐藏摘要。在 <code>_config.arknights.yaml</code> 文件中：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post:</span></span><br><span class="line">  <span class="attr">excerpt:</span> <span class="literal">true</span> <span class="comment"># 是否在文章中显示摘要内容（&lt;!-- more--&gt; 以上的内容）</span></span><br></pre></td></tr></table></figure>
+
+<p>可尝试使用 <a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt">hexo-blog-encrypt</a> 插件进行文档加密。</p>
+<blockquote>
+<p>详细参考 <a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md">hexo-blog-encrypt&#x2F;ReadMe.zh.md</a></p>
+</blockquote>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-blog-encrypt --save</span><br></pre></td></tr></table></figure>
+
+<p>在 <code>Hexo/_config.yml</code> 文件中添加以下内容：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Security</span></span><br><span class="line"><span class="attr">encrypt:</span> <span class="comment"># hexo-blog-encrypt</span></span><br><span class="line">  <span class="attr">abstract:</span> <span class="string">与</span> <span class="string">Rhodes</span> <span class="string">Island™</span> <span class="string">取得弱神经连接时需要口令</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">请输入与</span> <span class="string">Rhodes</span> <span class="string">Island™</span> <span class="string">取得弱神经连接时的口令：</span></span><br><span class="line">  <span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">tagName</span>, <span class="attr">password:</span> <span class="string">密码A</span>&#125;</span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">tagName</span>, <span class="attr">password:</span> <span class="string">密码B</span>&#125;</span><br><span class="line">  <span class="attr">template:</span> <span class="string">&lt;div</span> <span class="string">id=&quot;hexo-blog-encrypt&quot;</span> <span class="string">data-wpm=&quot;&#123;&#123;hbeWrongPassMessage&#125;&#125;&quot;</span> <span class="string">data-whm=&quot;&#123;&#123;hbeWrongHashMessage&#125;&#125;&quot;&gt;&lt;div</span> <span class="string">class=&quot;hbe-input-container&quot;&gt;&lt;input</span> <span class="string">type=&quot;password&quot;</span> <span class="string">id=&quot;hbePass&quot;</span> <span class="string">placeholder=&quot;&#123;&#123;hbeMessage&#125;&#125;&quot;</span> <span class="string">/&gt;&lt;label&gt;&#123;&#123;hbeMessage&#125;&#125;&lt;/label&gt;&lt;div</span> <span class="string">class=&quot;bottom-line&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;script</span> <span class="string">id=&quot;hbeData&quot;</span> <span class="string">type=&quot;hbeData&quot;</span> <span class="string">data-hmacdigest=&quot;&#123;&#123;hbeHmacDigest&#125;&#125;&quot;&gt;&#123;&#123;hbeEncryptedData&#125;&#125;&lt;/script&gt;&lt;/div&gt;</span></span><br><span class="line">  <span class="attr">wrong_pass_message:</span> <span class="string">与</span> <span class="string">Rhodes</span> <span class="string">Island™</span> <span class="string">效验口令失败，请重试。</span></span><br><span class="line">  <span class="attr">wrong_hash_message:</span> <span class="string">与</span> <span class="string">Rhodes</span> <span class="string">Island™</span> <span class="string">效验口令失败，当前使用临时权限查看。</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>或</strong> 在文章的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Front-matter</a> 区内设置：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">-</span> 作为日记加密</span><br><span class="line">date: 2016-03-30 21:12:21</span><br><span class="line">password: mikemessi</span><br><span class="line">abstract: 与 Rhodes Island™ 取得弱神经连接时需要口令</span><br><span class="line">message: 请输入与 Rhodes Island™ 取得弱神经连接时的口令：</span><br><span class="line">wrong<span class="emphasis">_pass_</span>message: 与 Rhodes Island™ 效验口令失败，请重试。</span><br><span class="line"><span class="section">wrong<span class="emphasis">_hash_</span>message: 与 Rhodes Island™ 效验口令失败，当前使用临时权限查看。</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><p>默认开启，若要关闭，在 <code>Hexo/_config.arknights.yml</code> 文件中：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h2><p>除了 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Hexo 支持的 Front-matter</a> 还支持：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文章页右上角发布/更新日期</span></span><br><span class="line"><span class="attr">post-info:</span> <span class="literal">true</span><span class="string">/false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 侧边栏的目录</span></span><br><span class="line"><span class="attr">post-index:</span> <span class="literal">true</span><span class="string">/false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 打赏框</span></span><br><span class="line"><span class="attr">reward:</span> <span class="literal">true</span><span class="string">/false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="引入自定义-CSS-JS-文件"><a href="#引入自定义-CSS-JS-文件" class="headerlink" title="引入自定义 CSS&#x2F;JS 文件"></a>引入自定义 CSS&#x2F;JS 文件</h2><p>可以在 <code>Hexo/source/css/</code> 目录下放入自己的 CSS 文件；<br>在 <code>Hexo/source/js/</code> 目录下放入自己的 JavaScript 脚本文件；</p>
+<p>然后修改 <code>Hexo/_config.arknights.yml</code> 文件：</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> # 在 `&lt;head&gt;` 标签内引入 CSS 样式表</span><br><span class="line"> stylesheets:</span><br><span class="line"><span class="addition">+- /css/custom.css</span></span><br><span class="line"> </span><br><span class="line"> # 在 `&lt;body&gt;` 尾部引入 JavaScript 脚本</span><br><span class="line"> scripts:</span><br><span class="line"><span class="addition">+- /js/custom.js</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>资源文件夹是存放用户资源的地方。<br>除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。<br>Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
+<p>——来自 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup#source">Hexo 官方文档</a></p>
+</blockquote>
+<h2 id="贡献"><a href="#贡献" class="headerlink" title="贡献"></a>贡献</h2><p>欢迎提交 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights/issues/new">Issues</a> 与 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights/pulls">PR</a>。</p>
+<h3 id="分支说明"><a href="#分支说明" class="headerlink" title="分支说明"></a>分支说明</h3><table>
+<thead>
+<tr>
+<th>分支</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>main</td>
+<td>相对稳定的版本</td>
+</tr>
+<tr>
+<td>dev</td>
+<td>开发中的版本</td>
+</tr>
+<tr>
+<td>gh-pages</td>
+<td>gh-page 托管</td>
+</tr>
+<tr>
+<td>hexo</td>
+<td>Hexo 目录，这里有可以用于测试主题的 <code>.md</code> 文件</td>
+</tr>
+</tbody></table>
+<h3 id="开发中可能遇见的问题及解决方法"><a href="#开发中可能遇见的问题及解决方法" class="headerlink" title="开发中可能遇见的问题及解决方法"></a>开发中可能遇见的问题及解决方法</h3><h4 id="修改-TS-文件不生效"><a href="#修改-TS-文件不生效" class="headerlink" title="修改 TS 文件不生效"></a>修改 TS 文件不生效</h4><p>TypeScript 需要手动编译，请全局安装 <code>typescript</code> 后在 <code>arknights\source\js\_src</code> 目录下执行 <code>tsc</code> 以编译。</p>
+<h4 id="运行-hexo-serve-debug-时，长文章渲染不全"><a href="#运行-hexo-serve-debug-时，长文章渲染不全" class="headerlink" title="运行 hexo serve --debug 时，长文章渲染不全"></a>运行 <code>hexo serve --debug</code> 时，长文章渲染不全</h4><p>这是由热重载插件 <code>hexo-browsersync</code> 导致的，不会影响发布。</p>
+<p>解决方法：禁用该插件。（反正不影响发布，不管也行）</p>
+<h3 id="参与开发可能需要的文档"><a href="#参与开发可能需要的文档" class="headerlink" title="参与开发可能需要的文档"></a>参与开发可能需要的文档</h3><ul>
+<li><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/templates">Hexo 官方文档</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://stylus.bootcss.com/">Stylus 中文网</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.pugjs.cn/api/getting-started.html">Pug 模板引擎中文文档</a></p>
+</li>
+<li><p>另外引用几个大佬的blog</p>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://easyhexo.com/">Easy Hexo</a></li>
+<li><a target="_blank" rel="noopener" href="http://cps.ninja/2019/03/16/hexo-with-latex/">让 Hexo 搭建的博客支持 LaTeX</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yyhh/p/11058985.html">Hexo主题开发 - ﹏猴子请来的救兵 - 博客园</a></li>
+<li><a target="_blank" rel="noopener" href="https://molunerfinn.com/make-a-hexo-theme/">Hexo主题开发经验杂谈 | MARKSZのBlog</a></li>
+<li><a target="_blank" rel="noopener" href="https://xinyufeng.net/2019/04/15/hexo-theme-guide/">Hexo 主题开发指南 | Peak Xin’s Blog</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h3 id="贡献者"><a href="#贡献者" class="headerlink" title="贡献者"></a>贡献者</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Laurenfrost">Laurenfrost</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ToUNVRSe">ToUNVRSe</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/feilongproject">飞龙project</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/DarkLingYun">DarkLingYun</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/RyoJerryYu">RyoJerryYu</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/TTsdzb">TTsdzb</a></li>
+</ul>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-start"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2020/04/15/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AF%86%E7%A0%81/">← 下一篇 服务器各种密码</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧</a><a class="i-index" id="to-index" href="#toc-div" title="文章目录">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="切换主题"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://www.helloimg.com/images/2023/08/06/oL766T.png" alt="Logo"></a><h1 id="Dr"><a target="_blank" rel="noopener" href="https://wominiii.github.io//">ZMerIII</a></h1><div id="description"><p></p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/willin/hexo-wordcount"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" href="mailto:stran_ge@outlook.com"><i class="fa fa-envelope" alt="E-Mail"></i></a><a class="social" target="_blank" rel="noopener" href="https://space.bilibili.com/67878942?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili" alt="BiliBili"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">写作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E5%AF%BC%E8%88%AA%E6%A0%8F%E4%B8%AD%E6%B7%BB%E5%8A%A0%E9%A1%B5%E9%9D%A2"><span class="toc-number">2.</span> <span class="toc-text">在导航栏中添加页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%81%E6%AD%A2%E5%BD%92%E6%A1%A3%E9%A1%B5%E7%BF%BB%E9%A1%B5"><span class="toc-number">3.</span> <span class="toc-text">禁止归档页翻页</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="toc-number">4.</span> <span class="toc-text">评论系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Valine"><span class="toc-number">4.1.</span> <span class="toc-text">Valine</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gitalk"><span class="toc-number">4.2.</span> <span class="toc-text">Gitalk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Waline"><span class="toc-number">4.3.</span> <span class="toc-text">Waline</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">5.</span> <span class="toc-text">数学公式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80%EF%BC%9A%E9%9D%99%E6%80%81%E6%B8%B2%E6%9F%93"><span class="toc-number">5.1.</span> <span class="toc-text">方案一：静态渲染</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C%EF%BC%9A%E5%8A%A8%E6%80%81%E6%B8%B2%E6%9F%93"><span class="toc-number">5.2.</span> <span class="toc-text">方案二：动态渲染</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E8%A1%A8%E6%94%AF%E6%8C%81"><span class="toc-number">6.</span> <span class="toc-text">图表支持</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E6%95%B0-%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF%E7%BB%9F%E8%AE%A1"><span class="toc-number">7.</span> <span class="toc-text">字数&#x2F;阅读时长统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E5%8A%A0%E5%AF%86"><span class="toc-number">8.</span> <span class="toc-text">文档加密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2"><span class="toc-number">9.</span> <span class="toc-text">搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Front-matter"><span class="toc-number">10.</span> <span class="toc-text">Front-matter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E5%85%A5%E8%87%AA%E5%AE%9A%E4%B9%89-CSS-JS-%E6%96%87%E4%BB%B6"><span class="toc-number">11.</span> <span class="toc-text">引入自定义 CSS&#x2F;JS 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%A1%E7%8C%AE"><span class="toc-number">12.</span> <span class="toc-text">贡献</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E8%AF%B4%E6%98%8E"><span class="toc-number">12.1.</span> <span class="toc-text">分支说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E4%B8%AD%E5%8F%AF%E8%83%BD%E9%81%87%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">12.2.</span> <span class="toc-text">开发中可能遇见的问题及解决方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-TS-%E6%96%87%E4%BB%B6%E4%B8%8D%E7%94%9F%E6%95%88"><span class="toc-number">12.2.1.</span> <span class="toc-text">修改 TS 文件不生效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C-hexo-serve-debug-%E6%97%B6%EF%BC%8C%E9%95%BF%E6%96%87%E7%AB%A0%E6%B8%B2%E6%9F%93%E4%B8%8D%E5%85%A8"><span class="toc-number">12.2.2.</span> <span class="toc-text">运行 hexo serve --debug 时，长文章渲染不全</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E4%B8%8E%E5%BC%80%E5%8F%91%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E7%9A%84%E6%96%87%E6%A1%A3"><span class="toc-number">12.3.</span> <span class="toc-text">参与开发可能需要的文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A1%E7%8C%AE%E8%80%85"><span class="toc-number">12.4.</span> <span class="toc-text">贡献者</span></a></li></ol></li></ol></div></div><footer><iframe “网易云” frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1471761548&auto=0&height=66"></iframe><nobr><span class="icp-title">QQ</span><a class="icp-content" target="_blank" rel="noopener" href="https://qm.qq.com/q/5PfAvrpdh6">1807534359</a></nobr><br><nobr>使用 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Skin <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr>网站创建自 <a target="_blank" rel="noopener" href="https://github.com/wominIII">WoMin</a></nobr></footer></aside><div id="shadow-aside"></div></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script src="/js/arknights.js"></script><script src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script></body></html>
